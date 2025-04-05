@@ -31,7 +31,16 @@ new_set = {1,2,3,4,5,1,2,4,5,6,7,7}
 print(type(new_set))
 print(new_set)
 # print(new_set[1]) -- error(immutable)
-ABC= list(new_set)
-print(ABC)
-ABC.append(8)
-print(ABC)
+new_set.add(8)
+print(new_set)
+second_set = {2,4,5,6,7,9,10,11}
+new_set.update(second_set)  # --to update two set
+print(new_set)
+
+print(new_set.union(second_set))
+print(new_set.intersection(second_set))
+
+# ABC= list(new_set)
+# print(ABC)
+# ABC.append(8)
+# print(ABC)
